@@ -1,0 +1,26 @@
+.graficas-container {
+    display: flex; /* Utiliza flexbox para distribuir los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    height: 55vh; /* Ajusta la altura al 100% de la altura de la ventana */
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+/* Estilos para cada sección */
+.graficas-section {
+    margin: 5px; /* Espacio entre las secciones */
+    flex: 1; /* Distribuye el espacio de forma equitativa entre las secciones */
+}
+
+.graficas-heading {
+    color: white;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.miGraficoContainer {
+    width: 300px; /* Ancho del contenedor si es necesario */
+    height: 300px; /* Altura del contenedor si es necesario */
+    /* Otros estilos para el contenedor */
+}

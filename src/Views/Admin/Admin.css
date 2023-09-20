@@ -1,0 +1,121 @@
+.container {
+  display: flex; /* Establece el contenedor como un contenedor flexible */
+  justify-content: space-between; /* Espacio entre los contenedores hijos */
+}
+
+/* Estilos CSS para la tarjeta de administrador */
+.admin {
+  background-color: rgb(252, 56, 56); /* Fondo rojo */
+  border: 3px solid black; /* Borde de color azul */
+  border-radius: 10px; /* Borde redondeado */
+  padding: 20px; /* Espaciado interno para el contenido */
+  text-align: center; /* Centrar el contenido horizontalmente */
+}
+
+/* Estilos para el encabezado h1 en la tarjeta */
+.admin h1 {
+  color: rgb(255, 255, 255); /* Color del texto blanco */
+  font-weight: bold; /* Texto en negrita */
+}
+
+/* Estilos para cada elemento de usuario en la tarjeta */
+.admin div {
+  background-color: rgb(
+    255,
+    72,
+    72
+  ); /* Fondo blanco para cada elemento de usuario */
+  border: 1px solid rgb(0, 0, 0); /* Borde de color verde */
+  border-radius: 5px; /* Borde redondeado para cada elemento de usuario */
+  margin: 20px 0; /* Espaciado entre elementos de usuario */
+  padding: 10px; /* Espaciado interno para cada elemento de usuario */
+  text-align: center; /* Centrar el contenido horizontalmente */
+}
+
+/* Estilos para el botón en cada elemento de usuario */
+.admin .buttonAdmin {
+  background-color: black; /* Fondo naranja para el botón */
+  color: white; /* Color del texto blanco */
+  border: none; /* Sin borde */
+  border-radius: 3px; /* Borde redondeado para el botón */
+  padding: 5px 10px; /* Espaciado interno para el botón */
+  cursor: pointer; /* Cambiar el cursor al pasar el ratón sobre el botón */
+}
+
+/* Estilos para el botón cuando se pasa el ratón sobre él */
+.admin .buttonAdmin:hover {
+  background-color: rgb(
+    0,
+    17,
+    255
+  ); /* Fondo naranja oscuro al pasar el ratón */
+}
+
+.user-card {
+  max-height: 500px; /* Establece la altura máxima deseada */
+  max-width: 760px;
+  overflow-y: auto; /* Habilita la barra de desplazamiento vertical cuando sea necesario */
+}
+
+/* Estilos personalizados para la barra de desplazamiento en WebKit */
+.user-card::-webkit-scrollbar {
+  width: 15px; /* Ancho de la barra de desplazamiento */
+}
+
+.user-card::-webkit-scrollbar-thumb {
+  background-color: #000000; /* Color del pulgar de la barra de desplazamiento */
+}
+
+.user-card::-webkit-scrollbar-thumb:hover {
+  background-color: #363636; /* Color del pulgar de la barra de desplazamiento al pasar el mouse */
+}
+
+.user-card::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Color de la pista de la barra de desplazamiento */
+}
+
+.users-section,
+.posts-section {
+  flex: 1;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #000000;
+  color: rgb(255, 255, 255);
+  display: flex; /* Establece el contenedor como un contenedor flexible */
+  flex-direction: column; /* Alinea los elementos internos en una columna */
+  justify-content: center; /* Centra verticalmente el contenido */
+  align-items: center; /* Centra horizontalmente el contenido */
+  text-align: center; /* Alinea el texto al centro */
+}
+
+@media (max-width: 767px) {
+  .container {
+    flex-direction: column;
+  }
+
+  /* Reducir el ancho de .admin */
+  .admin {
+    width: 100%;
+  }
+
+  /* Alinear .admin al centro en pantallas pequeñas */
+  .admin h1 {
+    text-align: center;
+  }
+
+  /* Estilos para cada elemento de usuario en pantallas pequeñas */
+  .admin div {
+    margin: 10px 0;
+  }
+
+  /* Estilos para el botón en pantallas pequeñas */
+  .admin .buttonAdmin {
+    padding: 8px 16px;
+  }
+
+  /* Alineación de .users-section y .posts-section en pantallas pequeñas */
+  .users-section,
+  .posts-section {
+    margin: 10px;
+  }
+}

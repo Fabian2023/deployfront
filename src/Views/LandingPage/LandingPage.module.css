@@ -1,0 +1,39 @@
+.carousel-image {
+  height: 400px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .carousel-image {
+    height: 200px;
+  }
+}
+
+.homeButton {
+  background-color: #f17474;
+  color: #000000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.8vh;
+  text-decoration: none;
+  cursor: pointer;
+  width: fit-content;
+  margin: 0 auto;
+  display: block;
+}
+
+.homeButton:hover {
+  background-color: #e90a0a;
+  color: #ffffff;
+}
+.background {
+  background-color: #000000;
+  height: 1400px;
+}
+/* no tocar */
+.grupo {
+  width: 1000px;
+  height: 600px;
+  margin-top: 50px;
+}

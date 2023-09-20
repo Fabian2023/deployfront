@@ -1,0 +1,111 @@
+/* Contenedor del Formulario */
+.form-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #201f1f;
+  border: 6px solid #111111;
+  border-radius: 8px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Campos de Texto y Select */
+.form-container input[type="text"],
+.form-container select {
+  flex: auto;
+  padding: 8px;
+  border: 1px solid #070707;
+  border-radius: 7px;
+  width: 100%; /* Asegura que los campos ocupen el ancho completo */
+  margin-bottom: 10px; /* Añade un espacio entre los campos */
+}
+
+/* Botones */
+.form-container button {
+  background-color: #fa0808;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block; /* Hace que el botón no ocupe todo el ancho disponible */
+  margin-right: 10px; /* Añade un espacio entre los botones */
+}
+
+.form-container button:hover {
+  background-color: #9c0808;
+}
+
+/* Etiquetas */
+.form-container label {
+  flex: auto;
+  margin-right: auto;
+  color: #fff; /* Cambia el color de las etiquetas a blanco */
+  font-weight: bold; /* Agrega negrita a las etiquetas */
+  margin-bottom: 5px; /* Añade un espacio entre las etiquetas y los campos */
+}
+
+/* Selector de Marca */
+.form-container select[name="brand"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #070707;
+  border-radius: 4px;
+  background-color: #fff; /* Cambia el fondo del select a blanco */
+  color: #070707; /* Cambia el color del texto del select */
+}
+
+/* Opciones del Selector de Marca */
+.form-container select[name="brand"] option {
+  background-color: #201f1f; /* Cambia el fondo de las opciones */
+  color: #fff; /* Cambia el color del texto de las opciones */
+}
+.form-container select[name="direccion"] option {
+  background-color: #201f1f; /* Cambia el fondo de las opciones */
+  color: #fff; /* Cambia el color del texto de las opciones */
+}
+
+.form-container select[name="category"] option {
+  background-color: #201f1f; /* Cambia el fondo de las opciones */
+  color: #fff; /* Cambia el color del texto de las opciones */
+}
+
+.almendra {
+  color: #070707;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.form-row > div {
+  flex: 0 0 calc(50% - 10px);
+  margin-bottom: 10px;
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+  .form-container {
+    padding: 10px;
+  }
+
+  .form-row > div {
+    flex: 0 0 100%;
+  }
+}

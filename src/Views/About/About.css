@@ -1,0 +1,97 @@
+.about-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.programmers-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.programmer-card {
+  width: 30vh;
+  height: 50vh;
+  margin: 2vh;
+  padding: 1vh;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  box-shadow: 0 0 5px rgba(233, 227, 227, 0.3);
+  background-color: rgb(90, 5, 5);
+}
+
+.fotito {
+  width: auto;
+  height: auto;
+  border-radius: 50%;
+  padding-bottom: 1vh;
+}
+
+.programmer-card h2 {
+  margin-top: 10px;
+  color: white;
+}
+
+.social-media-links {
+  margin-top: 15px;
+}
+
+.social-media-links a {
+  display: inline-block;
+  margin: 5px;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Estilos para los enlaces en hover */
+.social-media-links a:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para el encabezado h1 */
+.header-sec {
+  font-size: 45px;
+  margin-bottom: 40px;
+  color: white;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.Boton {
+  background-color: #f17474;
+  color: #000000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  text-decoration: none;
+  cursor: pointer;
+  width: fit-content;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 3vh;
+  margin-top: 8vh;
+}
+@media (max-width: 800px) {
+  .programmer-card {
+    width: 90%; /* Cambia el ancho de las tarjetas en pantallas más pequeñas */
+    height: auto; /* Cambia la altura a automático para ajustar el contenido */
+    margin: 2vh auto; /* Centra las tarjetas horizontalmente */
+  }
+
+  .programmer-card h2 {
+    font-size: 20px; /* Ajusta el tamaño de fuente de h2 */
+  }
+
+  .social-media-links {
+    text-align: center; /* Centra los enlaces sociales horizontalmente */
+  }
+
+  .Boton {
+    margin-top: 4vh; /* Ajusta el margen superior del botón */
+  }
+}

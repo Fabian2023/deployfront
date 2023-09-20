@@ -1,0 +1,111 @@
+.nav {
+  background: linear-gradient(to bottom, #ff0000, #ff5733);
+
+  color: #fff; /* Cambia el color de texto según tus preferencias */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vh 2vh;
+}
+
+.nav h2 {
+  margin: 0;
+  font-size: 2.5vh; /* Tamaño de fuente del título */
+}
+
+.nav__brand {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 3vh; /* Tamaño de fuente del logo o marca */
+  color: #fff;
+}
+
+.nav__menu {
+  list-style: none;
+  display: flex;
+  gap: 4vh; /* Espacio entre elementos de menú */
+  margin: 0;
+  padding: 0;
+}
+
+.nav__item {
+  margin: 0;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #fff; /* Cambia el color de los enlaces según tus preferencias */
+  font-size: 1.8vh; /* Tamaño de fuente de los enlaces */
+}
+
+/* Estilo para el enlace activo */
+.nav__link.active {
+  font-weight: bold; /* Puedes cambiar el estilo del enlace activo */
+}
+.divLogo {
+  font-size: 3vh; /* Tamaño de fuente del logo o marca */
+  color: #fff;
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nav__welcome {
+  margin-right: 20px;
+  font-size: 17px; /* Ajusta el valor según el espacio deseado */
+}
+
+.nav__logout {
+  font-size: 17px;
+  transition: text-shadow 0.3s ease;
+}
+
+.nav__logout:hover {
+  text-shadow: 0 0 6px rgb(245, 245, 242); /* Puedes ajustar el color y la intensidad del resaltado aquí */
+}
+.nav__link-group a {
+  margin-right: 30px; /* Ajusta el valor según el espacio que desees */
+}
+.nav__link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.8vh;
+  cursor: pointer; /* Agrega el cursor pointer para indicar que es interactivo */
+}
+
+.nav__link:hover {
+  text-decoration: none; /* Quita el subrayado al pasar el cursor sobre el enlace */
+  color: #fff; /* Mantén el color de texto original al pasar el cursor sobre el enlace */
+}
+
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav h2 {
+    font-size: 2vh;
+  }
+
+  .nav__brand {
+    font-size: 2.5vh;
+    margin-bottom: 20px;
+  }
+
+  .nav__menu {
+    flex-direction: column;
+    gap: 2vh;
+  }
+
+  .nav__menu li {
+    margin: 0;
+  }
+
+  .nav__link {
+    font-size: 2vh;
+  }
+
+  .nav__link.active {
+    font-weight: bold;
+  }
+}

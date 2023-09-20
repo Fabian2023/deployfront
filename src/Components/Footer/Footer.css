@@ -1,0 +1,32 @@
+.footer {
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  color: #ffffff; /* Cambia el color del texto según tus preferencias */
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #2b2a2a;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: #fff; /* Cambia el color del enlace según tus preferencias */
+  margin: 0 10px;
+}
+
+@media (max-width: 768px) {
+  .futer {
+    padding: 10px;
+    font-size: 14px;
+  }
+}

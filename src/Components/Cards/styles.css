@@ -1,0 +1,6 @@
+.cards {
+  display: flex; /* Muestra las tarjetas en una fila */
+  flex-wrap: wrap; /* Permite que las tarjetas se envuelvan cuando no quepan en una fila */
+  gap: 16px; /* Espacio entre las tarjetas */
+  justify-content: space-between; /* Distribuye el espacio horizontalmente entre las tarjetas */
+}

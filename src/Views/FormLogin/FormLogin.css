@@ -1,0 +1,45 @@
+.contenedorF {
+  margin-top: 20px;
+  padding: 20px; /* Espacio alrededor del formulario */
+  border-radius: 1rem; /* Bordes redondeados */
+  max-width: 600px; /* Ancho máximo del contenedor */
+  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+  box-shadow: 0vh 0vh 1vh rgba(0, 0, 0, 0.1);
+}
+
+/* Flex-direction: column; si aplicamos mas de un item al contenedor, flex-direction: row es default */
+
+.formulinocat {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  max-height: 100%;
+  /* flex-direction: column; */
+}
+
+label {
+  padding-top: 10px;
+  color: aliceblue;
+}
+
+.botonardo {
+  margin-top: 15px;
+  justify-content: center;
+  color: aliceblue;
+}
+.hacetecuenta {
+  padding-left: 5px;
+}
+.jajanotienecuenta {
+  font-size: small;
+  color: aliceblue;
+}
+@media (max-width: 800px) {
+  .contenedorF {
+    max-width: 100%;
+  }
+
+  .formulinocat {
+    flex-direction: column;
+  }
+}

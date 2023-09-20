@@ -1,0 +1,15 @@
+export const GET_CARS = "GET_CARS";
+export const GET_DETAIL = "GET_DETAIL";
+export const ORDER_BY_NAME = "ORDER_BY_NAME";
+export const ORDER_BY_PRICE = "ORDER_BY_PRICE";
+export const ON_SEARCH = "ON_SEARCH";
+export const POST_PRODUCT = "POST_PRODUCT";
+export const GET_CATEGORYS = "GET_CATEGORYS";
+export const GET_BRANDS = "GET_BRANDS";
+export const FILTER_BRANDS = "FILTER_BRANDS";
+export const FILTER_CATEGORY = "FILTER_CATEGORY";
+export const ADD_FAV="ADD_FAV"
+export const REMOVE_FAV="REMOVE_FAV"
+export const ORDER_BY_NAME_FAV="ORDER_BY_NAME_FAV"
+export const ADD_REVIEW="ADD_REVIEW"
+export const CREATE_USER="CREATE_USER"

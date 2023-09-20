@@ -1,0 +1,67 @@
+.card {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s;
+  width: 350px;
+  position: relative; /* Agregamos posición relativa para posicionar elementos internos */
+  margin-bottom: 30px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Estilos para la imagen */
+.card img {
+  width: 350px; /* Ancho fijo */
+  height: 220px; /* Alto fijo */
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+/* Estilos para el título */
+.title {
+  font-size: 1.25rem;
+  margin-top: 80px;
+  color: #000000;
+  position: absolute; /* Posicionamos el título de forma absoluta */
+  top: 50%; /* Lo posicionamos en la mitad superior de la tarjeta */
+  left: 50%; /* Lo posicionamos en el centro horizontal de la tarjeta */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Centramos el título verticalmente y horizontalmente */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.7
+  ); /* Agregamos un fondo semitransparente al título */
+  padding: 5px 10px; /* Añadimos un espacio alrededor del texto del título */
+  border-radius: 5px; /* Bordes redondeados para el título */
+}
+
+/* Estilos para el enlace de navegación (utilizando NavLink) */
+.card-details a {
+  text-decoration: none;
+  color: #007bff;
+  transition: color 0.3s;
+}
+
+.card-details a:hover {
+  color: #0056b3;
+}
+.aymicorazon {
+  position: absolute;
+  top: 7%; /* Coloca el botón en la mitad vertical de la imagen */
+  left: 95%; /* Coloca el botón en la mitad horizontal de la imagen */
+  transform: translate(-50%, -50%); /* Centra el botón en la imagen */
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  /* Puedes personalizar los estilos del botón según tus preferencias */
+}
